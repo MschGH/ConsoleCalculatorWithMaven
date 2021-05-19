@@ -1,4 +1,4 @@
-package ch.bbw.ms;
+package ch.bbw.ms.consolecalculator;
 
 /**
  * Hello world!
