@@ -42,4 +42,16 @@ public class CalculatorTest {
     public void testArithmeticExceptionNotRaised() throws ArithmeticException {
         testee.division(10, 0);
     }
+
+    @Test
+    public void testSummeZweiPositiveIsOkProtected() {
+        assertTrue(testee.summe1(10, 25) == 35);
+    }
+
+    //Private Methoden können nicht getestet werden
+
+    @Test
+    public void testDivisionPackageProtected() {
+        assertTrue(testee.division1(10, 2) == 5);
+    }
 }
