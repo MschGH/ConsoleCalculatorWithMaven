@@ -14,8 +14,20 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testSummePositivUndNegativIsOk() {
+        testee = new Calculator();
+        assertTrue(testee.summe(30, -10) == 20);
+    }
+
+    @Test
     public void testSubtractionZweiPositiveIsOk() {
         testee = new Calculator();
         assertTrue(testee.subtraction(25, 10) == 15);
+    }
+
+    @Test
+    public void testSubtractionPositivUndNegativIsOk() {
+        testee = new Calculator();
+        assertTrue(testee.subtraction(15, -10) == 25);
     }
 }
