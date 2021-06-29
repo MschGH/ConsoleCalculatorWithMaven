@@ -108,8 +108,9 @@ public class CalculatorTest {
     public void testDivisionDurchNullIsNotOk() {
         testee.division(10, 0);
     }
-    @Test
+    /**@Test
     public void testArithmeticExceptionNotRaised() throws ArithmeticException { testee.division(10, 0); }
+     */
 
     @Test
     public void testSummeZweiPositiveIsOkProtected() {
